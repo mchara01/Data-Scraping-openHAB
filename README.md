@@ -4,4 +4,9 @@
 Implementation of a data collection and analysis script from the openHAB platform. Retrieval and processing of data from the openHAB server is accomplished though a script written in Bash. The data are extracted through openHAB REST API endpoints
 
 ### Architecture 
+The central node of the automation system is the VM which has the role of the server with the openHAB server installed. The VM depicted in the illustration below is located within the closed network of the IT Department. Because there are no IoT devices within this network, a free weather service provider is used named OpenWeatherMap (https://openweathermap.org/api).
+
 ![alt text](https://github.com/mchara01/Data-Mining-openHab/blob/main/images/architecture.JPG?raw=true)
+
+### Functionalities
+`./openhab_scraping.sh -d` Downloads from openHAB the information of a collection of items and stores the data locally in a directory in the current location. A .json file will be created for each item.
