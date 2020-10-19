@@ -11,9 +11,8 @@ The central node of the automation system is the VM which has the role of the se
 ### Functionalities
 1. `./openhab_scraping.sh -d`<br /> Downloads from openHAB the information of a collection of items and stores the data locally in a directory in the current location. A .json file will be created for each item.
 1. `./openhab_scraping.sh -p`<br /> Queries made on data stored locally. More specifically,information are read from the item json files and will an HTML file will be created that looks like the image below.
-
+1. `./openhab_scraping.sh -v`<br /> Creates a graphical representation of the data in the form of a graph using the Gnuplot tool (http://www.gnuplot.info/).
+1. `./openhab_scraping.sh -c`<br /> Combination of data from different bindings.
 ![alt text](https://github.com/mchara01/Data-Mining-openHab/blob/main/images/app_results.JPG?raw=true)
 
-1. `./openhab_scraping.sh -v`<br /> Creates a graphical representation of the data in the form of a graph using the Gnuplot tool (http://www.gnuplot.info/).
 
-1. `./openhab_scraping.sh -c`<br /> Combination of data from different bindings.
